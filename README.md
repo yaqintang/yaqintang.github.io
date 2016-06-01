@@ -1,4 +1,3 @@
-# yaqintang.github.io
+### yaqintang.github.io
 
-Mapping from my personal website: yaqintang.com
-Used for some feature testing.
+Mapping from my [personal website](http://www.yaqintang.com)
