@@ -1,3 +1,5 @@
-### yaqintang.github.io
+## Yaqin Tang - Homepage
 
-Mapping from my [personal website](http://www.yaqintang.com)
+Welcom to my homepage!
+
+You can learn more about me at [github repo](http://yaqintang.github.io/) or [my personal site](http://www.yaqintang.com).
