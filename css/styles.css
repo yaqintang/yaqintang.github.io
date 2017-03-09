@@ -1,0 +1,34 @@
+body {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+a {text-decoration : none; color : #003399;}
+a:hover {text-decoration:underline; color: #8C1515; }
+
+.disabled{
+	pointer-events: none;
+    color:black;
+}
+
+@media all and (max-width:500px){
+    table{
+        width:100%;
+    }
+    
+    td{
+        display:block;
+        width:100%;
+    }
+    
+    tr{
+        display:block;
+        margin-bottom:30px;
+    }
+}
+
+.profile{
+	max-width: 80%;
+	height: auto;
+}
