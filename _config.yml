@@ -1,0 +1,14 @@
+# Site Settings
+title: Yaqin Tang
+email: ytangchn@gmail.com
+description: >
+  Homepage of Yaqin Tang, about the world she love and the work she dedicate
+baseurl: ""
+url: "http://yaqintang.github.io"
+github_username: yaqintang 
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
