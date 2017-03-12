@@ -67,7 +67,7 @@ time {
   height: 30px; }
 
 /* Aside */
-header {
+aside {
   position: fixed;
   top: 0;
   left: 0;
@@ -76,18 +76,18 @@ header {
   z-index: 2;
   border-bottom: 1px solid white;
   box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1); }
-  header nav[role="navleft"] {
+  aside nav[role="navleft"] {
     float: left;
     max-width: 800px;
     margin: 0 auto; }
-    header nav[role="navleft"] ul {
+    aside nav[role="navleft"] ul {
       margin: 0;
       padding: 0;
       list-style: none; }
-      header nav[role="navleft"] ul li {
+      aside nav[role="navleft"] ul li {
         float: left;
         position: relative; }
-        header nav[role="navleft"] ul li a {
+        aside nav[role="navleft"] ul li a {
           text-decoration: none;
           display: block;
           padding: 15px;
@@ -95,26 +95,26 @@ header {
           line-height: 30px;
           margin-bottom: -1px;
           box-shadow: 0; }
-          header nav[role="navleft"] ul li a:hover, header nav[role="navleft"] ul li a:active {
+          aside nav[role="navleft"] ul li a:hover, aside nav[role="navleft"] ul li a:active {
             background: #fff;
             text-decoration: none;
             color: #19CCAA; }
-    header nav[role="navleft"]:after {
+    aside nav[role="navleft"]:after {
       content: '';
       display: table;
       clear: both; }
-  header nav[role="navright"] {
+  aside nav[role="navright"] {
     float: right;
     max-width: 960px;
     margin: 0 auto; }
-    header nav[role="navright"] ul {
+    aside nav[role="navright"] ul {
       margin: 0;
       padding: 0;
       list-style: none; }
-      header nav[role="navright"] ul li {
+      aside nav[role="navright"] ul li {
         float: left;
         position: relative; }
-        header nav[role="navright"] ul li a {
+        aside nav[role="navright"] ul li a {
           text-decoration: none;
           display: block;
           padding: 15px;
@@ -122,11 +122,11 @@ header {
           line-height: 30px;
           margin-bottom: -1px;
           box-shadow: 0; }
-          header nav[role="navright"] ul li a:hover, header nav[role="navright"] ul li a:active {
+          aside nav[role="navright"] ul li a:hover, aside nav[role="navright"] ul li a:active {
             background: #fff;
             text-decoration: none;
             color: #19CCAA; }
-    header nav[role="navright"]:after {
+    aside nav[role="navright"]:after {
       content: '';
       display: table;
       clear: both; }
