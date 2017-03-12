@@ -55,6 +55,41 @@ time {
   max-width: 800px;
   margin: 0 auto; }
 
+/* this is for blog image/text format */
+.walk-listing {
+  background-color: #fff;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid #000; */
+  width: 100%; }
+
+.walk-listing .photo {
+  float: left;
+  width: 20%;
+  overflow: hidden; }
+
+.walk-listing .summary {
+  padding-left: 20px;
+  overflow: hidden;
+  width: 80%; }
+
+@media screen and (max-width: 479px) {
+  .walk-listing .photo {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    height: auto;
+    border: 1px solid #000;
+    border-bottom: 0px solid #000; }
+
+  .walk-listing .summary {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    height: auto;
+    border: 1px solid #000; } }
+/* end responsive div */
 .img-circle {
   border-radius: 50%;
   height: 30px; }

@@ -5,7 +5,7 @@ layout: default
 <div>
 	<div class="container">
 		<h2>Yaqin Tang &nbsp; <img src="/images/namelogo.png" style="max-width:5%;vertical-align:middle"></h2>
-		<div style="padding-bottom: 0rem;"><img src="/images/flower.jpg" style="float:right;max-width:40%;margin-top:-40px;border-radius:10%;">
+		<div style="padding-bottom: 0rem;"><img src="/images/flower.jpg" style="float:right;max-width:40%;margin-top:-40px;border-radius:10%;" />
 		<font color="#898989"><p>Hi, there! Welcome and enjoy your day!</p></font>
 		<p>
 			I'm technically a software engineer,
@@ -19,14 +19,21 @@ layout: default
 <h3>Recent Updates</h3>
 
 {% for i in (0..2) %}
-<table cellpadding="20">
-<tr>
-	<td><img src="/images/flower.jpg" style="max-width:10%;border-radius:10%;"></td>
-	<td>
-			<a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title }}</a>
-			<div><time>{{ site.posts[i].date | date: "%b %-d, %Y" }}</time></div>
-	</td>
-</tr>
-</table>
-	
+<div class="walk-listing">
+	<div class="photo">
+		<img src="/images/flowerround.jpg" style="max-width:100%;border-radius:50%;" alt="" align="middle"/>
+	</div>
+    <div class="summary">
+		<p>
+		<font size="1"><time>{{ site.posts[i].date | date: "%b %-d, %Y" }}</time></font>
+		<br><font size="+1"><a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title }}</a></font>
+		<br><font size="-1">{% if site.posts[i].summary %}{{ site.posts[i].summary }}{% endif %}</font>
+		</p>
+	</div>
+</div>
 {% endfor %}
+
+
+
+
+

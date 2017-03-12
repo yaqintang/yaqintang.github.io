@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "-welcome-to-sfo!"
+title:  "-welcome-to-sfo!-welcome-to-sfo!-welcome-to--sfo!"
 date:   2017-02-10 00:10:45
 categories: jekyll update
+summary: this a summary mmary of the content of this post...this a summary of the content of this post...this a summary of the content of this post...
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
