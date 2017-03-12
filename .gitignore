@@ -1,2 +1,18 @@
-_site
+# Untracked files
+
+.htaccess
+wp-config.php
+wp-content/uploads
+wp-content/plugins
+wp-content/cache
+wp-content/w3tc-config/
+wp-content/advanced-cache.php
 .sass-cache
+node_modules
+src/scss/.sass-cache
+/projects
+/music
+BingSiteAuth.xml
+google1f541020b637f0c5.html
+robots.txt
+2EAC0CD040741286F3A537C98D540B77.txt

@@ -1,0 +1,69 @@
+/* Projects
+=============== */
+
+.portfolio-container {
+	background: $light-background;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: .5rem 0;
+}
+
+.portfolio-example {
+	width: 100%;
+	img {
+		display: block;
+	}
+}
+
+.portfolio-item {
+	margin: .5rem 1rem;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .05), 0 5px 10px rgba(0, 0, 0, .05);
+	transition: all .3s ease;
+	background: white;
+	border: 1px solid $border;
+	&:hover,
+	&:active,
+	&:focus {
+		cursor: pointer;
+		transform: translateY(-3px);
+		box-shadow: 0 20px 80px rgba(0, 0, 0, .2), 0 5px 20px rgba(0, 0, 0, .08);
+	}
+	h3 {
+		border-top: 1px solid $border;
+		font-size: 1.2rem;
+		font-weight: 500;
+		padding: 2rem;
+		margin: 0;
+	}
+}
+
+@include small-breakpoint {
+	.portfolio-container {
+		padding: 1rem;
+	}
+	.portfolio-example {
+		width: 50%;
+	}
+	.portfolio-item {
+		margin: 1rem;
+		h3 {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+@include large-breakpoint {
+	.portfolio-container {
+		padding: 1.5rem;
+	}
+	.portfolio-example {
+		width: calc(100% / 3);
+	}
+	.portfolio-item {
+		margin: 1.5rem;
+		h3 {
+			font-size: 1.6rem;
+		}
+	}
+}
