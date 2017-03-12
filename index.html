@@ -17,3 +17,16 @@ layout: default
 	</div>
 </div>
 <h3>Recent Updates</h3>
+
+{% for i in (0..2) %}
+<table cellpadding="20">
+<tr>
+	<td><img src="/images/flower.jpg" style="max-width:10%;border-radius:10%;"></td>
+	<td>
+			<a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title }}</a>
+			<div><time>{{ site.posts[i].date | date: "%b %-d, %Y" }}</time></div>
+	</td>
+</tr>
+</table>
+	
+{% endfor %}
