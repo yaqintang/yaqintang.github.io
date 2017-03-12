@@ -1,13 +1,8 @@
-# Start Jekyll
+# Yaqin Tang - Homepage
 
-A guide to getting started with Jekyll.
+[http://yaqintang.github.io/](http://yaqintang.github.io/)
 
-### [Read the tutorial!](https://taniarascia.com/make-a-static-website-with-jekyll)
-
-- Learn about static site generators
-- Install Ruby and Jekyll
-- Create a custom website running on Jekyll and Sass
-- Deploy a Jekyll site to GitHub pages
+I'm technically a software engineer, and you can learn more about me and my past experience at the about page. But you guess it, I will be an active blogger here! Check out my posts at the blog page now!
 
 ## License
 
