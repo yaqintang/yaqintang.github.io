@@ -11,7 +11,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  padding-top: 45px; }
 
 h1,
 h2,
@@ -42,16 +43,6 @@ a:hover {
   color: #19CCAA;
   text-decoration: underline; }
 
-header {
-  background: #1D1425;
-  padding: 0px 15px;
-  text-align: center;
-  margin: 50px 0 0;
-  height: 0vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 main {
   padding: 0 15px;
   max-width: 800px;
@@ -73,7 +64,7 @@ time {
   height: 30px; }
 
 /* Aside */
-aside {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -82,18 +73,18 @@ aside {
   z-index: 2;
   border-bottom: 1px solid white;
   box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1); }
-  aside nav[role="navleft"] {
+  header nav[role="navleft"] {
     float: left;
     max-width: 800px;
     margin: 0 auto; }
-    aside nav[role="navleft"] ul {
+    header nav[role="navleft"] ul {
       margin: 0;
       padding: 0;
       list-style: none; }
-      aside nav[role="navleft"] ul li {
+      header nav[role="navleft"] ul li {
         float: left;
         position: relative; }
-        aside nav[role="navleft"] ul li a {
+        header nav[role="navleft"] ul li a {
           text-decoration: none;
           display: block;
           padding: 15px;
@@ -101,26 +92,26 @@ aside {
           line-height: 30px;
           margin-bottom: -1px;
           box-shadow: 0; }
-          aside nav[role="navleft"] ul li a:hover, aside nav[role="navleft"] ul li a:active {
+          header nav[role="navleft"] ul li a:hover, header nav[role="navleft"] ul li a:active {
             background: #fff;
             text-decoration: none;
             color: #19CCAA; }
-    aside nav[role="navleft"]:after {
+    header nav[role="navleft"]:after {
       content: '';
       display: table;
       clear: both; }
-  aside nav[role="navright"] {
+  header nav[role="navright"] {
     float: right;
     max-width: 960px;
     margin: 0 auto; }
-    aside nav[role="navright"] ul {
+    header nav[role="navright"] ul {
       margin: 0;
       padding: 0;
       list-style: none; }
-      aside nav[role="navright"] ul li {
+      header nav[role="navright"] ul li {
         float: left;
         position: relative; }
-        aside nav[role="navright"] ul li a {
+        header nav[role="navright"] ul li a {
           text-decoration: none;
           display: block;
           padding: 15px;
@@ -128,11 +119,11 @@ aside {
           line-height: 30px;
           margin-bottom: -1px;
           box-shadow: 0; }
-          aside nav[role="navright"] ul li a:hover, aside nav[role="navright"] ul li a:active {
+          header nav[role="navright"] ul li a:hover, header nav[role="navright"] ul li a:active {
             background: #fff;
             text-decoration: none;
             color: #19CCAA; }
-    aside nav[role="navright"]:after {
+    header nav[role="navright"]:after {
       content: '';
       display: table;
       clear: both; }

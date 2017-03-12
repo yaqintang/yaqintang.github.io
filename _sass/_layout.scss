@@ -5,6 +5,7 @@ body {
 	font-size: 1.1em;
 	line-height: 1.6;
 	-webkit-font-smoothing: antialiased;
+	padding-top: 45px; 
 }
 h1,
 h2,
@@ -36,16 +37,7 @@ a:hover {
 	color: $link-hover-color;
 	text-decoration: underline;
 }
-header {
-	background: $header;
-	padding: 0px 15px;
-	text-align: center;
-	margin: 50px 0 0;
-	height: 0vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 main {
 	padding: 0 15px;
 	max-width: $content-width;
@@ -69,7 +61,7 @@ time {
 
 /* Aside */
 
-aside {
+header {
 	position: fixed;
 	top: 0;
 	left: 0;
