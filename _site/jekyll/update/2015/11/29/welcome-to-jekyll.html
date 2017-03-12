@@ -12,37 +12,43 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head> 
 
 
 <body>
-	<aside>
+	<div class="navbar navbar-default navbar-fixed-top" style="background-color:white">
 	<div class="container">
-		<nav role="navleft">
-			<ul>
-				<li><a href="http://localhost:4000"><img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle">&nbsp;Home</a></li>
+		<div class="navbar-header">
+			<a href="http://localhost:4000" class="navbar-brand">
+				<div>
+					<img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle" />
+					Home
+				</div>
+			</a>
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-main">
+			<ul class="nav navbar-nav">
 				<li><a href="/blog">Blog</a></li>
 				 
 				<li><a href="/about/">About</a></li>
 				         
 			</ul>
-			</li>
+			<ul class="nav navbar-nav navbar-right" style="font-size: 1.5em">
+				<li><a href="https://github.com/yaqintang" target="_blank"><img class="img-round" src='/images/github.png' style="vertical-align:middle"></a></li>
+				<li><a href="https://www.linkedin.com/in/yaqintang/" target="_blank"><img class="img-round" src='/images/linkedin.png' style="vertical-align:middle"></a></li>
 			</ul>
-		</nav>
-		
-		<nav role="navright">
-			<ul>
-				<li><a href="https://github.com/yaqintang"><img class="img-round" src='/images/github.png' style="vertical-align:middle"></a></li>
-				<li><a href="https://www.linkedin.com/in/yaqintang/"><img class="img-round" src='/images/linkedin.png' style="vertical-align:middle"></a></li>
-			</ul>
-			</li>
-			</ul>
-		</nav>
+		</div>
 	</div>
-</aside>
+</div>
 
-<header>
-</header>
 	<main>
 		<article>
 			<h2>Welcome to Jekyll!</h2>

@@ -75,20 +75,21 @@ time {
   width: 80%; }
 
 @media screen and (max-width: 479px) {
-  .walk-listing .photo {
-    float: none;
-    margin-right: 0;
-    width: auto;
-    height: auto;
-    border: 1px solid #000;
-    border-bottom: 0px solid #000; }
-
+  /*
+     .walk-listing .photo { 
+      float: none;
+      margin-right:0;
+      width:auto;
+  	height:auto;
+      border:1px solid #000;
+      border-bottom:0px solid #000;    
+    } */
   .walk-listing .summary {
     float: none;
     margin-right: 0;
     width: auto;
     height: auto;
-    border: 1px solid #000; } }
+    /* border:1px solid #000; */ } }
 /* end responsive div */
 .img-circle {
   border-radius: 50%;
@@ -98,7 +99,16 @@ time {
   border-radius: 25%;
   height: 30px; }
 
-/* Aside */
+/* navigation bar */
+.navbar-brand div {
+  height: 100%; }
+
+.navbar-brand img {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  border: none; }
+
 aside {
   position: fixed;
   top: 0;

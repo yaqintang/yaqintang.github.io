@@ -12,7 +12,7 @@ layout: default
     <div class="summary">
 		<p>
 		<font size="1"><time>{{ post.date | date: "%b %-d, %Y" }}</time></font>
-		<br><font size="+1"><a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ post.title }}</a></font>
+		<br><font size="+1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></font>
 		<br><font size="-1">{% if post.summary %}{{ post.summary }}{% endif %}</font>
 		</p>
 	</div>
