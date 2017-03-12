@@ -1,21 +1,8 @@
-# Oblate WordPress Theme
+# Yaqin Tang - Homepage
 
-## Personal WordPress theme for blogging
+[http://yaqintang.github.io/](http://yaqintang.github.io/)
 
-I like simple, clean, minimalist blogs. I don't like sidebars, ads, widgets, plugins, or anything else on my blog - because if you're here, you're here for the content. Outside of a simple header with links to my GitHub, Twitter, and RSS feeds, the site consists only of articles.
-
-## External resources
-
-* Browser consistency with [Normalize.css](https://necolas.github.io/normalize.css/) 
-* Syntax highlighting with [Prism](http://prismjs.com/)
-* Custom fonts with [Google Fonts](https://www.google.com/fonts)
-* Task running with [Gulp](http://gulpjs.com/)
-
-## Directory Structure
-
-* Theme files are all located in **wp-content/themes/oblate**
-* Source files are located in `src` folder
-* Running `gulp` command applies a Sass watch to source files and compiles to theme files
+I'm technically a software engineer, and you can learn more about me and my past experience at the about page. But you guess it, I will be an active blogger here! Check out my posts at the blog page now!
 
 ## License
 
