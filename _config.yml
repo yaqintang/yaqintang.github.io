@@ -2,10 +2,11 @@
 title: Yaqin Tang
 email: ytangchn@gmail.com
 description: >
-  Homepage of Yaqin Tang, about the world she love and the work she dedicate
+  All about the world I love and the work I dedicate. About contains my academic projects before graduate.
 baseurl: ""
 url: "http://yaqintang.github.io"
-github_username: yaqintang 
+twitter_username: yaqintang
+github_username: yaqintang
 # Build Settings
 sass:
   sass_dir: _sass

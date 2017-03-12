@@ -1,11 +1,21 @@
 <aside>
 	<div class="container">
-		<nav>
+		<nav role="navleft">
 			<ul>
-                <li><a href="{{ site.url }}"><img class="img-circle" src='/images/me.jpg' style="vertical-align:middle">&nbsp;{{ site.title }}</a></li>
-                {% for page in site.pages %} {% if page.title %}
+				<li><a href="{{ site.url }}"><img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle">&nbsp;Home</a></li>
+				<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+				{% for page in site.pages %} {% if page.title %}
 				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 				{% endif %} {% endfor %}
+			</ul>
+			</li>
+			</ul>
+		</nav>
+		
+		<nav role="navright">
+			<ul>
+				<li><a href="https://github.com/yaqintang"><img class="img-round" src='/images/github.png' style="vertical-align:middle"></a></li>
+				<li><a href="https://www.linkedin.com/in/yaqintang/"><img class="img-round" src='/images/linkedin.png' style="vertical-align:middle"></a></li>
 			</ul>
 			</li>
 			</ul>
