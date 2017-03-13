@@ -1,17 +1,15 @@
 <section class="navigation">
 	<div class="nav-container">
 		<div class="brand">
-			<a href="{{ site.url }}"><img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle">&nbsp;Home</a>
+			<a href="{{ site.url }}"><img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle"> Yaqin Tang</a>
 		</div>
 		<nav>
 			<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 			<ul class="nav-list">
+				<li><a href="{{ site.url }}">Home</a></li>
 				{% for page in site.pages %} {% if page.title %}
 				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 				{% endif %} {% endfor %}
-
-				<li><a href="https://github.com/yaqintang" target="_blank"><img class="img-round" src='/images/github.png' style="vertical-align:middle"></a></li>
-				<li><a href="https://www.linkedin.com/in/yaqintang/" target="_blank"><img class="img-round" src='/images/linkedin.png' style="vertical-align:middle"></a></li>
 			</ul>
 		</nav>
 	</div>
