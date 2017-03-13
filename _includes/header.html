@@ -1,24 +1,44 @@
-<aside>
-	<div class="container">
-		<nav role="navleft">
-			<ul>
-				<li><a href="{{ site.url }}"><img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle">&nbsp;Home</a></li>
-				<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+<section class="navigation">
+	<div class="nav-container">
+		<div class="brand">
+			<a href="{{ site.url }}"><img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle">&nbsp;Home</a>
+		</div>
+		<nav>
+			<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+			<ul class="nav-list">
 				{% for page in site.pages %} {% if page.title %}
 				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 				{% endif %} {% endfor %}
-			</ul>
-			</li>
-			</ul>
-		</nav>
-		
-		<nav role="navright">
-			<ul>
+
 				<li><a href="https://github.com/yaqintang" target="_blank"><img class="img-round" src='/images/github.png' style="vertical-align:middle"></a></li>
 				<li><a href="https://www.linkedin.com/in/yaqintang/" target="_blank"><img class="img-round" src='/images/linkedin.png' style="vertical-align:middle"></a></li>
 			</ul>
-			</li>
-			</ul>
 		</nav>
 	</div>
-</aside>
+</section>
+
+<script>
+	(function($) { // Begin jQuery
+	  $(function() { // DOM ready
+		// If a link has a dropdown, add sub menu toggle.
+		$('nav ul li a:not(:only-child)').click(function(e) {
+		  $(this).siblings('.nav-dropdown').toggle();
+		  // Close one dropdown when selecting another
+		  $('.nav-dropdown').not($(this).siblings()).hide();
+		  e.stopPropagation();
+		});
+		// Clicking away from dropdown will remove the dropdown class
+		$('html').click(function() {
+		  $('.nav-dropdown').hide();
+		});
+		// Toggle open and close nav styles on click
+		$('#nav-toggle').click(function() {
+		  $('nav ul').slideToggle();
+		});
+		// Hamburger to X toggle
+		$('#nav-toggle').on('click', function() {
+		  this.classList.toggle('active');
+		});
+	  }); // end DOM ready
+	})(jQuery); // end jQuery
+</script>

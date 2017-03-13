@@ -3,10 +3,12 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>{% if page.title %}Yaqin Tang - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }} - Yaqin Tang{% else %}{{ site.title }}{% endif %}</title>
 
 	<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/css/fontstyleone.css' | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/css/fontstyletwo.css' | prepend: site.baseurl }}">
+	<script src="/css/jquery.min.js"></script>
+	
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head> 
