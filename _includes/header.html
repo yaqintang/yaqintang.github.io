@@ -6,9 +6,17 @@
 		<nav>
 			<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
 			<ul class="nav-list">
-				<li><a href="{{ site.url }}">Home</a></li>
-				{% for page in site.pages %} {% if page.title %}
-				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				{% if page.title %}
+					<li><a href="{{ site.url }}">Home</a></li>
+				{% else %}
+					<li><a class="active" href="{{ site.url }}">Home</a></li>
+				{% endif %}
+				{% for eachpage in site.pages %} {% if eachpage.title %}
+				{% if eachpage.title == page.title %}
+					<li><a class="active" href="{{ eachpage.url | prepend: site.baseurl }}">{{ eachpage.title }}</a></li>
+				{% else %}
+					<li><a href="{{ eachpage.url | prepend: site.baseurl }}">{{ eachpage.title }}</a></li>
+				{% endif %}
 				{% endif %} {% endfor %}
 			</ul>
 		</nav>

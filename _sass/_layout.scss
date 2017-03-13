@@ -1,13 +1,90 @@
+/* declare commonly used variables; */
 $content-width: 800px;
 $breakpoint: 600px;
-$nav-height: 70px;
+$nav-height: 50px;
 $nav-background: #ffffff;
 $nav-font-color: #262626;
 $link-hover-color: #2581DC;
+/* 
+$link-color; 
+*/
+
+
+
+
+
+
+body {
+	margin: 0;
+	color: $font-color;
+	font-family: $font-style;
+	font-size: 1.1em;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	padding-top: 0px; 
+}
+h1,
+h2,
+h3 {
+	font-weight: 600;
+	color: $heading-font-color;
+	font-family: $heading-font;
+	line-height: 1.5;
+}
+h1 {
+	color: $main;
+	font-size: 2.5em;
+	a,
+	a:visited {
+		text-decoration: none;
+		color: $main;
+	}
+}
+h2 {
+	font-size: 2em;
+}
+a,
+a:visited {
+	color: $link-color;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: $link-hover-color;
+	text-decoration: none;
+}
+
+main {
+	padding: 0 15px;
+	max-width: $content-width;
+	margin: 0 auto;
+}
+time {
+	color: #898989;
+}
+
+.container {
+	max-width: $content-width;
+	margin: 0 auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+    height: 40px;
+}
+.img-round {
+    border-radius: 25%;
+    height: 30px;
+}
+
+/* ------------------------------------------------------------ */
+/* this part is for navigation bar */
+/* ------------------------------------------------------------ */
 
 .navigation {
 	height: $nav-height;
 	background: $nav-background;
+	box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
 }
 
 .nav-container {
@@ -30,7 +107,7 @@ $link-hover-color: #2581DC;
 		text-decoration: none;
 	}
 	a:hover {
-		color: $link-hover-color;
+		color: $link-color;
 		text-decoration: none;
 	}
 }
@@ -58,7 +135,10 @@ nav {
 				&:not(:only-child):after {
 					padding-left: 4px;
 					content: ' ▾';
-				} 
+				}
+			}
+			a.active {
+				color: $link-hover-color;
 			}
 			ul li {
 				min-width: 190px;
@@ -92,7 +172,7 @@ nav {
 #nav-toggle {
 	position: absolute;
 	left: 18px;
-	top: 22px;
+	top: 12px;
 	cursor: pointer;
 	padding: 10px 35px 16px 0px;
 	span,
@@ -164,63 +244,6 @@ nav {
 
 
 
-
-
-
-body {
-	margin: 0;
-	color: $font-color;
-	font-family: $font-style;
-	font-size: 1.1em;
-	line-height: 1.6;
-	-webkit-font-smoothing: antialiased;
-	padding-top: 0px; 
-}
-h1,
-h2,
-h3 {
-	font-weight: 600;
-	color: $heading-font-color;
-	font-family: $heading-font;
-	line-height: 1.5;
-}
-h1 {
-	color: $main;
-	font-size: 2.5em;
-	a,
-	a:visited {
-		text-decoration: none;
-		color: $main;
-	}
-}
-h2 {
-	font-size: 2em;
-}
-a,
-a:visited {
-	color: $link-color;
-	text-decoration: none;
-	font-weight: bold;
-}
-a:hover {
-	color: $link-hover-color;
-	text-decoration: none;
-}
-
-main {
-	padding: 0 15px;
-	max-width: $content-width;
-	margin: 0 auto;
-}
-time {
-	color: #898989;
-}
-
-.container {
-	max-width: $content-width;
-	margin: 0 auto;
-}
-
 /* this is for blog image/text format */
 .walk-listing {
 	background-color: #fff;
@@ -264,16 +287,19 @@ time {
 
 /* end responsive div */
 
-.img-circle {
-    border-radius: 50%;
-    height: 30px;
-}
-.img-round {
-    border-radius: 25%;
-    height: 30px;
-}
+
 
 footer {
-	text-align: center;
-	padding: 40px;
+	float: right;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+a.footer {
+	color: #b3b3b3
+}
+.fa-linkedin-square{
+color: #8c8c8c
+}
+.fa-linkedin-square:hover{
+color: #952675;
 }
