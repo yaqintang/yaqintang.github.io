@@ -5,22 +5,69 @@ date:   2017-02-10 00:10:45
 categories: jekyll update
 summary: this a summary mmary of the content of this post...this a summary of the content of this post...this a summary of the content of this post...
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+# Number of Connected Components in an Undirected Graph
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+> Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to find the number of connected components in an undirected graph.
 
-Jekyll also offers powerful support for code snippets:
+> Example 1:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+> ```
+     0          3
+     |          |
+     1 --- 2    4
+Given n = 5 and edges = [[0, 1], [1, 2], [3, 4]], return 2.
+```
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+> Example 2:
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+> ```
+     0           4
+     |           |
+     1 --- 2 --- 3
+Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [3, 4]], return 1.
+```
+
+> Note:
+
+> You can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
+
+```Python
+class Solution(object):
+    def countComponents(self, n, edges):
+        """
+        :type n: int
+        :type edges: List[List[int]]
+        :rtype: int
+        """
+        UF = UnionFind(n)
+        for i, node in enumerate(edges):
+            UF.union(node[0], node[1])
+        return UF.countHead
+
+class UnionFind(object):
+    def __init__(self, N):
+        self.idArray = [i for i in xrange(N)]
+        self.sizeArray = [1] * N
+        self.countHead = N
+
+    def root(self, i):
+        while self.idArray[i] != i:
+            self.idArray[i] = self.idArray[self.idArray[i]]
+            i = self.idArray[i]
+        return i
+
+    def connected(self, p, q):
+        return self.root(p) == self.root(q)
+
+    def union(self, p, q):
+        i, j = self.root(p), self.root(q)
+        if i == j: return
+        if self.sizeArray[i] < self.sizeArray[j]:
+            self.idArray[i] = j
+            self.sizeArray[j] += self.sizeArray[i]
+        else:
+            self.idArray[j] = i
+            self.sizeArray[i] += self.sizeArray[j]
+        self.countHead -= 1
+```
+
