@@ -1,0 +1,50 @@
+<section class="navigation">
+	<div class="nav-container">
+		<div class="brand">
+			<a href="{{ site.url }}"><img class="img-circle" src='/images/meface.jpg' style="vertical-align:middle"> Yaqin Tang</a>
+		</div>
+		<nav>
+			<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+			<ul class="nav-list">
+				{% if page.title %}
+					<li><a href="{{ site.url }}">Home</a></li>
+				{% else %}
+					<li><a class="active" href="{{ site.url }}">Home</a></li>
+				{% endif %}
+				{% for eachpage in site.pages %} {% if eachpage.title %}
+				{% if eachpage.title == page.title %}
+					<li><a class="active" href="{{ eachpage.url | prepend: site.baseurl }}">{{ eachpage.title }}</a></li>
+				{% else %}
+					<li><a href="{{ eachpage.url | prepend: site.baseurl }}">{{ eachpage.title }}</a></li>
+				{% endif %}
+				{% endif %} {% endfor %}
+			</ul>
+		</nav>
+	</div>
+</section>
+
+<script>
+	(function($) { // Begin jQuery
+	  $(function() { // DOM ready
+		// If a link has a dropdown, add sub menu toggle.
+		$('nav ul li a:not(:only-child)').click(function(e) {
+		  $(this).siblings('.nav-dropdown').toggle();
+		  // Close one dropdown when selecting another
+		  $('.nav-dropdown').not($(this).siblings()).hide();
+		  e.stopPropagation();
+		});
+		// Clicking away from dropdown will remove the dropdown class
+		$('html').click(function() {
+		  $('.nav-dropdown').hide();
+		});
+		// Toggle open and close nav styles on click
+		$('#nav-toggle').click(function() {
+		  $('nav ul').slideToggle();
+		});
+		// Hamburger to X toggle
+		$('#nav-toggle').on('click', function() {
+		  this.classList.toggle('active');
+		});
+	  }); // end DOM ready
+	})(jQuery); // end jQuery
+</script>
