@@ -1,8 +1,11 @@
 /*
 search keywords:
-1. navigation bar
-2. footer and social icon
-3. home profile
+1. overal settings
+2. homepage
+3. navigation bar
+4. blog page
+5. academic page
+6. footer and social icon
 */
 
 /* declare commonly used variables; */
@@ -13,31 +16,12 @@ $nav-background: #ffffff;
 $nav-font-color: #262626;
 $link-hover-color: #2581DC;
 /* some default variables
-$link-color; 
+$link-color; $font-color; $font-style; $heading-font-color; $heading-font; $main;
 */
 
 /* ------------------------------------------------------------ */
-/* this part is for home profile */
+/* this part is for overal settings */
 /* ------------------------------------------------------------ */
-
-.banner{
-text-align:center;
-margin-left:auto;
-margin-right:auto;
-max-width:550px;
-padding:2rem 0 0
-}
-.banner h1{
-font-size:2.5rem;
-margin-bottom:.5rem
-}
-
-
-/* this part is for home profile */
-/* ------------------------------------------------------------ */
-
-
-
 
 body {
 	margin: 0;
@@ -57,8 +41,9 @@ h3 {
 	line-height: 1.5;
 }
 h1 {
-	color: $main;
+	color: #000000;
 	font-size: 2.5em;
+	margin:.67em 0;
 	a,
 	a:visited {
 		text-decoration: none;
@@ -81,30 +66,56 @@ a:hover {
 
 main {
 	padding: 0 15px;
-	max-width: $content-width;
+	max-width: 600px;
 	margin: 0 auto;
 }
 time {
 	color: #898989;
 }
 
-.container {
-	max-width: 600px;
+/* end overal settings */
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* this part is for homepage */
+/* ------------------------------------------------------------ */
+
+.profilecontainer {
+	text-align: center;
+	max-width: 500px;
 	margin: 0 auto;
+	h1 {
+		color: #000000;
+		font-weight: bold;
+		font-size: 2.5em;
+		margin:.5em 0;
+	}
 }
 
-.img-circle {
-    border-radius: 50%;
-    height: 40px;
+.namelogo {
+    max-width: 8.5%;
+	vertical-align: middle;
+	-o-object-fit: contain;
 }
+
 .img-round {
     border-radius: 25%;
     height: 30px;
 }
 
+/* this part is for homepage */
+/* ------------------------------------------------------------ */
+
+
 /* ------------------------------------------------------------ */
 /* this part is for navigation bar */
 /* ------------------------------------------------------------ */
+
+.brandlogoimg {
+    border-radius: 50%;
+    height: 40px;
+}
 
 .navigation {
 	height: $nav-height;
@@ -119,7 +130,7 @@ time {
 
 .brand {
 	position: absolute;
-	padding-left: 10px;
+	padding-left: 15px;
 	float: left;
 	line-height: $nav-height;
 	/* text-transform: uppercase; */
@@ -271,7 +282,9 @@ nav {
 /* ------------------------------------------------------------ */
 
 
-/* this is for blog image/text format */
+/* ------------------------------------------------------------ */
+/* this part is for blog page */
+/* ------------------------------------------------------------ */
 .walk-listing {
 	background-color: #fff;
 	margin-bottom: 20px;
@@ -282,16 +295,16 @@ nav {
 }
 
 .walk-listing .photo {
-    float: right;
+    float: left;
     width: 20%;
 	overflow: hidden;
 }
 
 .walk-listing .summary {
-	padding-left: 0px;
+	padding-left: 20px;
     overflow: hidden;
     width: 80%;
-	float: left;
+	float: right;
 }
 
 @media screen and (max-width: 479px) {
@@ -313,7 +326,16 @@ nav {
   }
 }
 
-/* end responsive div */
+/* end blog page */
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* this part is for academic page */
+/* ------------------------------------------------------------ */
+
+/* end academic page */
+/* ------------------------------------------------------------ */
 
 
 /* ------------------------------------------------------------ */
@@ -321,9 +343,9 @@ nav {
 /* ------------------------------------------------------------ */
 footer {
 	text-align: right;
-	padding-top: 40px;
-	padding-bottom: 40px;
-
+	padding: 40px 15px;
+	max-width: 800px;
+	margin: 0 auto;
 }
 a.footer {
 	color: #cccccc

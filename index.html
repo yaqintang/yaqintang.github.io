@@ -2,10 +2,9 @@
 layout: default
 ---
 
-<div>
-	<div class="container">
-		<h2>Yaqin Tang &nbsp; <img src="/images/namelogo.png" style="max-width:5%;vertical-align:middle"></h2>
-		<div style="padding-bottom: 0rem;"><img src="/images/flower.jpg" style="float:right;max-width:40%;margin-top:-40px;border-radius:10%;" />
+<div class="profilecontainer">
+		<h1>Yaqin Tang &nbsp; <img class="namelogo" src="/images/namelogo.png"></h1>
+		<div style="padding-bottom: 0rem;"><img class="image-circle" src="/images/flower.jpg" style="float:right;max-width:40%;" />
 		<font color="#898989"><p>Hi, there! Welcome and enjoy your day!</p></font>
 		<p>
 			I'm technically a software engineer,
@@ -14,13 +13,16 @@ layout: default
 			Check out my posts at the blog page now!
 		</p>
 		</div>
-	</div>
 </div>
-<h3>Recent Updates</h3>
+
+
+<h3>Latest Updates</h3>
 
 {% for i in (0..2) %}
 <div class="walk-listing">
-
+	<div class="photo">
+		<img src="/images/flowerround.jpg" style="max-width:100%;border-radius:10%;" alt="" align="middle"/>
+	</div>
     <div class="summary">
 		<p>
 		<font size="1"><time>{{ site.posts[i].date | date: "%b %-d, %Y" }}</time></font>
@@ -28,10 +30,11 @@ layout: default
 		<br><font size="-1">{% if site.posts[i].summary %}{{ site.posts[i].summary }}{% endif %}</font>
 		</p>
 	</div>
-	<div class="photo">
-		<img src="/images/flowerround.jpg" style="max-width:100%;border-radius:50%;" alt="" align="middle"/>
-	</div>
+	
 </div>
+{% if i != 2 %}
+<hr style="height:1.5px;border:none;color:#e6e6e6;background-color:#e6e6e6;" />
+{% endif %}
 {% endfor %}
 
 
