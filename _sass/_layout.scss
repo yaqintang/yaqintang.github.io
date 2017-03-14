@@ -1,7 +1,8 @@
 /*
 search keywords:
-navigation bar
-footer and social icon
+1. navigation bar
+2. footer and social icon
+3. home profile
 */
 
 /* declare commonly used variables; */
@@ -11,11 +12,29 @@ $nav-height: 50px;
 $nav-background: #ffffff;
 $nav-font-color: #262626;
 $link-hover-color: #2581DC;
-/* 
+/* some default variables
 $link-color; 
 */
 
+/* ------------------------------------------------------------ */
+/* this part is for home profile */
+/* ------------------------------------------------------------ */
 
+.banner{
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+max-width:550px;
+padding:2rem 0 0
+}
+.banner h1{
+font-size:2.5rem;
+margin-bottom:.5rem
+}
+
+
+/* this part is for home profile */
+/* ------------------------------------------------------------ */
 
 
 
@@ -70,7 +89,7 @@ time {
 }
 
 .container {
-	max-width: $content-width;
+	max-width: 600px;
 	margin: 0 auto;
 }
 
@@ -100,7 +119,7 @@ time {
 
 .brand {
 	position: absolute;
-	/* padding-left: 20px; */
+	padding-left: 10px;
 	float: left;
 	line-height: $nav-height;
 	/* text-transform: uppercase; */
@@ -329,7 +348,7 @@ color: #55acee;
 color: #3b5998;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $breakpoint) {
    footer { 
 	text-align: center;
   }
