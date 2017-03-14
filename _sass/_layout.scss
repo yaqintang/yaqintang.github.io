@@ -172,7 +172,7 @@ nav {
 #nav-toggle {
 	position: absolute;
 	left: 18px;
-	top: 12px;
+	top: 13px;
 	cursor: pointer;
 	padding: 10px 35px 16px 0px;
 	span,
@@ -242,6 +242,8 @@ nav {
 	}
 }
 
+/* end navigation bar */
+/* ------------------------------------------------------------ */
 
 
 /* this is for blog image/text format */
@@ -288,18 +290,43 @@ nav {
 /* end responsive div */
 
 
-
+/* ------------------------------------------------------------ */
+/* this part is for footer and social icon */
+/* ------------------------------------------------------------ */
 footer {
-	float: right;
+	text-align: right;
 	padding-top: 40px;
 	padding-bottom: 40px;
+
 }
 a.footer {
-	color: #b3b3b3
+	color: #cccccc
 }
-.fa-linkedin-square{
-color: #8c8c8c
+
+.fa-github-square:hover{
+color: #000000;
 }
 .fa-linkedin-square:hover{
-color: #952675;
+color: #007bb5;
 }
+.ai-google-scholar-square:hover{
+color: #4885ed
+}
+.fa-google-plus-square:hover{
+color: #dd4b39;
+}
+.fa-twitter-square:hover{
+color: #55acee;
+}
+.fa-facebook-square:hover{
+color: #3b5998;
+}
+
+@media screen and (max-width: 600px) {
+   footer { 
+	text-align: center;
+  }
+}
+
+/* end footer and social icon */
+/* ------------------------------------------------------------ */
