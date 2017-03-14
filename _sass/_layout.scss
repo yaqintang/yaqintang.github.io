@@ -95,6 +95,7 @@ time {
 
 .namelogo {
     max-width: 8.5%;
+	min-width: 8%;
 	vertical-align: middle;
 	-o-object-fit: contain;
 }
@@ -102,6 +103,17 @@ time {
 .img-round {
     border-radius: 25%;
     height: 30px;
+}
+
+@media screen and (max-width: $breakpoint) {
+.profilecontainer {
+	h1 {
+		color: #000000;
+		font-weight: bold;
+		font-size: 1.5em;
+		margin:.5em 0;
+	}
+}
 }
 
 /* this part is for homepage */
