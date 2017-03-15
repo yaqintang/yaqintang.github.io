@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "-welcome-to-seattle!"
+title:  "-welcome--welcome-to-seatwelcome-to-seatwelcome-to-seatwelcome-to-seattle!"
 date:   2017-01-30 00:10:45
 categories: jekyll update
+summary: This post is the step by step introduction of the technologies I learned along building . This post is the step by step introduction of the technologies I learned along building .This post is the step by step introduction of the technologies I learned along building .
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 

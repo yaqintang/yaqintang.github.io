@@ -2,48 +2,44 @@
 layout: default
 ---
 
-<div>
 <div class="profilecontainer">
 		<div class="introduce">
 		<h1>Yaqin Tang &nbsp; <img class="namelogo" src="/images/namelogo.png"></h1>
 
 		<font color="#898989"><p>Hi, there! Welcome and enjoy your day!</p></font>
 		<p>
-			I'm technically a software engineer,
-			and you can learn more about me and my past experience at the about page.
-			But you guess it, I will be an active blogger here!
-			Check out my posts at the blog page now!
+			I'm a full-time software engineer.
+			Before graduation, I'm interested in mobile computing, wireless networks and visible light communication.
+			But you guess it, I will be an active blogger here! Share my tech progress, life vision and a lot more interesting stuff.
 		</p>
 		</div>
 		<div class="photo">
-			<img src="/images/me.jpg" style="float:right;max-width:80%;" />
+			<img class="imgprofile" src="/images/me.jpg" />
 		</div>
-</div>
-</div>
-
-<div>
-<h3>Latest Updates</h3>
-
-{% for i in (0..2) %}
-<div class="walk-listing">
-	<div class="photo">
-		<img src="/images/flowerround.jpg" style="max-width:100%;border-radius:10%;" alt="" align="middle"/>
-	</div>
-    <div class="summary">
-		<p>
-		<font size="1"><time>{{ site.posts[i].date | date: "%b %-d, %Y" }}</time></font>
-		<br><font size="+1"><a href="{{ site.posts[i].url | prepend: site.baseurl }}">{{ site.posts[i].title }}</a></font>
-		<br><font size="-1">{% if site.posts[i].summary %}{{ site.posts[i].summary }}{% endif %}</font>
-		</p>
-	</div>
-	
-</div>
-{% if i != 2 %}
-<hr style="height:1.5px;border:none;color:#e6e6e6;background-color:#e6e6e6;" />
-{% endif %}
-{% endfor %}
+		<div style="clear: both;"></div>
 </div>
 
+<div><h2>Latest Updates</h2></div>
+
+<div class="columnsContainer">
+	<div class="sideNav">
+		<font size="1"><time>{{ site.posts[0].date | date: "%b %-d, %Y" }}</time></font>
+		<br><font size="+1"><a href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }}</a></font>
+		<br><font size="-1">{% if site.posts[0].summary %}{{ site.posts[0].summary }}{% endif %}</font>
+    </div>
+
+	<div class="leftColumn">
+		<font size="1"><time>{{ site.posts[1].date | date: "%b %-d, %Y" }}</time></font>
+		<br><font size="+1"><a href="{{ site.posts[1].url | prepend: site.baseurl }}">{{ site.posts[1].title }}</a></font>
+		<br><font size="-1">{% if site.posts[1].summary %}{{ site.posts[1].summary }}{% endif %}</font>
+    </div>
+
+	<div class="rightColumn">
+		<font size="1"><time>{{ site.posts[2].date | date: "%b %-d, %Y" }}</time></font>
+		<br><font size="+1"><a href="{{ site.posts[2].url | prepend: site.baseurl }}">{{ site.posts[2].title }}</a></font>
+		<br><font size="-1">{% if site.posts[2].summary %}{{ site.posts[2].summary }}{% endif %}</font>
+    </div>
+</div>
 
 
 

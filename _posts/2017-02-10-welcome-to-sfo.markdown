@@ -3,7 +3,7 @@ layout: post
 title:  "-welcome-to-sfo!-welcome-to-sfo!-welcome-to--sfo!"
 date:   2017-02-10 00:10:45
 categories: jekyll update
-summary: this a summary mmary of the content of this post...this a summary of the content of this post...this a summary of the content of this post...
+summary: this a summary mmary of the content of this post...this a summary of the content of this post...this a summary of the content of this post...summary of the content
 ---
 # Number of Connected Components in an Undirected Graph
 

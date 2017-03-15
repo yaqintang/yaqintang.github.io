@@ -32,6 +32,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 	padding-top: 0px; 
 }
+main {
+	padding: 0 15px;
+	max-width: $content-width;
+	margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
@@ -42,17 +48,17 @@ h3 {
 }
 h1 {
 	color: #000000;
+	font-weight: bold;
 	font-size: 2.5em;
-	margin:.67em 0;
-	a,
-	a:visited {
-		text-decoration: none;
-		color: $main;
-	}
+	margin:.5em 0;
 }
 h2 {
-	font-size: 2em;
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.5em;
 }
+
+
 a,
 a:visited {
 	color: $link-color;
@@ -64,11 +70,7 @@ a:hover {
 	text-decoration: none;
 }
 
-main {
-	padding: 0 15px;
-	max-width: 800px;
-	margin: 0 auto;
-}
+
 time {
 	color: #898989;
 }
@@ -87,65 +89,63 @@ time {
 }
 
 .profilecontainer {
-	
 	width: 100%;
-	position: relative;
-	h1 {
-		color: #000000;
-		font-weight: bold;
-		font-size: 2.5em;
-		margin:.5em 0;
-	}
 }
-
 .profilecontainer .introduce {
 	float: left;
 	width: 70%;
 	text-align: center;
+	padding: 0 40px;
 }
 .profilecontainer .photo {
 	float: right;
 	width: 30%;
-}
-
-@media screen and (max-width: 600px) {
-/*
-   .profilecontainer .photo { 
-    float: none;
-    margin-right:0;
-    width:auto;
-	height:auto;
-    border:1px solid #000;
-    border-bottom:0px solid #000;    
-  } */
-   .profilecontainer .introduce { 
-    float: none;
-    margin-right:0;
-    width:auto;
-	height:auto;
-    /* border:1px solid #000; */
-  }
-}
-
-
-
-.img-round {
-    border-radius: 25%;
-    height: 30px;
+	padding-top: 40px;
+	.imgprofile {
+		max-width: 85%;
+		border-radius: 10%;
+	}
 }
 
 @media screen and (max-width: $breakpoint) {
-.profilecontainer {
 	h1 {
 		color: #000000;
 		font-weight: bold;
-		font-size: 1.5em;
+		font-size: 2em;
 		margin:.5em 0;
 	}
-
+	h2 {
+		font-size: 1em;
+	}
+	.profilecontainer .introduce { 
+		width:auto;
+		height:auto;
+	}
+	.profilecontainer .photo { 
+		margin-left:15%;
+		width:auto;
+		height:auto;
+		padding: 0;
+	}
 }
-}
 
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.columnsContainer { 
+	position: relative;
+	text-align: center;
+}
+.leftColumn, .rightColumn, .sideNav {  overflow: hidden; border: 1px solid  #d9d9d9; padding: 5px; height: 175px; }
+.leftColumn, .sideNav { margin-bottom: 0; }
+
+@media screen and (min-width: $breakpoint) {
+  .leftColumn { margin-right: 34%; margin-left: 34%; height: 325px; }
+
+  .rightColumn { position: absolute; top: 0; right: 0; width: 32%; height: 325px; }
+
+  .sideNav { float: left; width: 32%; height: 325px;}
+}
 
 /* end homepage */
 /* ------------------------------------------------------------ */
@@ -387,7 +387,7 @@ nav {
 footer {
 	text-align: right;
 	padding: 40px 15px;
-	max-width: 800px;
+	max-width: $content-width;
 	margin: 0 auto;
 }
 a.footer {
