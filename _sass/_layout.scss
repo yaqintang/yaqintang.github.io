@@ -24,7 +24,6 @@ $link-color; $font-color; $font-style; $heading-font-color; $heading-font; $main
 /* ------------------------------------------------------------ */
 
 body {
-	margin: 0;
 	color: $font-color;
 	font-family: $font-style;
 	font-size: 1.1em;
@@ -55,7 +54,7 @@ h1 {
 h2 {
 	color: #000000;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 
