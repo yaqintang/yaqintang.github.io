@@ -1,0 +1,15 @@
+# Site Settings
+title: Yaqin Tang
+email: ytangchn@gmail.com
+description: >
+  All about the world I love and the work I dedicate. About contains my academic projects before graduate.
+baseurl: ""
+url: "http://localhost:4000"
+twitter_username: yaqintang
+github_username: yaqintang
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM

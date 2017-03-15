@@ -1,0 +1,25 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<h2>Blog <font size="2">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></font></h2>
+
+{% for post in site.posts %}
+<div class="walk-listing">
+	<div class="photo">
+		<img src="/images/flowerround.jpg" style="max-width:100%;border-radius:50%;" alt="" align="middle"/>
+	</div>
+    <div class="summary">
+		<p>
+		<font size="1"><time>{{ post.date | date: "%b %-d, %Y" }}</time></font>
+		<br><font size="+1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></font>
+		<br><font size="-1">{% if post.summary %}{{ post.summary }}{% endif %}</font>
+		</p>
+	</div>
+</div>
+{% endfor %}
+
+
+

@@ -1,0 +1,423 @@
+/*
+search keywords:
+1. overal settings
+2. homepage
+3. navigation bar
+4. blog page
+5. academic page
+6. footer and social icon
+*/
+
+/* declare commonly used variables; */
+$content-width: 800px;
+$breakpoint: 600px;
+$nav-height: 50px;
+$nav-background: #ffffff;
+$nav-font-color: #262626;
+$link-hover-color: #2581DC;
+/* some default variables
+$link-color; $font-color; $font-style; $heading-font-color; $heading-font; $main;
+*/
+
+/* ------------------------------------------------------------ */
+/* this part is for overal settings */
+/* ------------------------------------------------------------ */
+
+body {
+	margin: 0;
+	color: $font-color;
+	font-family: $font-style;
+	font-size: 1.1em;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	padding-top: 0px; 
+}
+main {
+	padding: 0 15px;
+	max-width: $content-width;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 600;
+	font-family: $heading-font;
+	line-height: 1.5;
+	color: #000000;
+}
+h1 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 2.5em;
+	margin:.5em 0;
+}
+h2 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+
+a,
+a:visited {
+	color: $link-color;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: $link-hover-color;
+	text-decoration: none;
+}
+
+
+time {
+	color: #898989;
+}
+
+/* end overal settings */
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* this part is for homepage */
+/* ------------------------------------------------------------ */
+
+.namelogo {
+    max-width: 9%;
+	vertical-align: middle;
+}
+
+.profilecontainer {
+	width: 100%;
+}
+.profilecontainer .introduce {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding: 0 40px;
+}
+.profilecontainer .photo {
+	float: right;
+	width: 30%;
+	padding-top: 40px;
+	.imgprofile {
+		max-width: 85%;
+		border-radius: 5%;
+	}
+}
+
+@media screen and (max-width: $breakpoint) {
+	h1 {
+		color: #000000;
+		font-weight: bold;
+		font-size: 2em;
+		margin: 0;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	.profilecontainer .introduce { 
+		width:auto;
+		height:auto;
+		padding: 0 15px;
+	}
+	.profilecontainer .photo {
+		margin-left:15%;
+		width:auto;
+		height:auto;
+		padding: 0;
+	}
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.columnsContainer { 
+	position: relative;
+	text-align: center;
+}
+.leftColumn, .rightColumn, .sideNav {  overflow: hidden; border: 1px solid  #d9d9d9; border-radius: 0; padding: 15px; height: 225px; margin-bottom: 15px;}
+
+@media screen and (min-width: $breakpoint) {
+  .leftColumn { margin-right: 34%; margin-left: 34%; height: 338px; border-radius: 5%; }
+
+  .rightColumn { position: absolute; top: 0; right: 0; width: 32%; height: 338px; border-radius: 5%; }
+
+  .sideNav { float: left; width: 32%; height: 338px; border-radius: 5%; }
+}
+
+/* end homepage */
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* this part is for navigation bar */
+/* ------------------------------------------------------------ */
+
+.brandlogoimg {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.navigation {
+	height: $nav-height;
+	background: $nav-background;
+	box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
+}
+
+.nav-container {
+	max-width: $content-width;
+	margin: 0 auto;
+}
+
+.brand {
+	position: absolute;
+	padding-left: 15px;
+	float: left;
+	line-height: $nav-height;
+	/* text-transform: uppercase; */
+	/* font-size: 1.2em; */
+	color: $link-color;
+	font-weight: bold;
+	a,
+	a:visited {
+		color: $link-color;
+		text-decoration: none;
+	}
+	a:hover {
+		color: $link-color;
+		text-decoration: none;
+	}
+}
+
+nav {
+	float: right;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			float: left;
+			position: relative;
+			a {
+				display: block;
+				padding: 0 20px;
+				line-height: $nav-height;
+				background: $nav-background;
+				color: $link-color;
+				text-decoration: none;
+				&:hover {
+					background: $nav-background;
+					color: $link-hover-color;
+				}
+				&:not(:only-child):after {
+					padding-left: 4px;
+					content: ' ▾';
+				}
+			}
+			a.active {
+				color: $link-hover-color;
+			}
+			ul li {
+				min-width: 190px;
+				& a {
+					padding: 15px;
+					line-height: 20px;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}
+
+.nav-dropdown {
+	position: absolute;
+	display: none;
+	z-index: 1;
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-mobile {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: $nav-background;
+	height: $nav-height;
+	width: $nav-height;
+}
+
+#nav-toggle {
+	position: absolute;
+	left: 18px;
+	top: 13px;
+	cursor: pointer;
+	padding: 10px 35px 16px 0px;
+	span,
+	span:before,
+	span:after {
+		cursor: pointer;
+		border-radius: 1px;
+		height: 3px;
+		width: 20px;
+		background: $link-color;
+		position: absolute;
+		display: block;
+		content: '';
+		transition: all 200ms ease-in-out;
+	}
+	span:before {
+		top: -6px;
+	}
+	span:after {
+		bottom: -6px;
+	}
+	&.active span {
+		background-color: transparent;
+		&:before,
+		&:after {
+			top: 0;
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+	.nav-mobile {
+		display: block;
+	}
+	nav {
+		width: 100%;
+		padding: $nav-height 0 15px;
+		ul {
+			display: none;
+			li {
+				float: none;
+				a {
+					padding: 15px;
+					line-height: 20px;
+				}
+				ul li a {
+					padding-left: 30px;
+				}
+			}
+		}
+	}
+  
+	.nav-dropdown {
+		position: static;
+	}
+}
+
+@media screen and (min-width: $breakpoint) {
+	.nav-list {
+		display: block !important;
+	}
+}
+
+/* end navigation bar */
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* this part is for blog page */
+/* ------------------------------------------------------------ */
+.walk-listing {
+	background-color: #fff;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+    /* border: 1px solid #000; */
+    width: 100%;
+}
+
+.walk-listing .photo {
+    float: left;
+    width: 20%;
+	overflow: hidden;
+}
+
+.walk-listing .summary {
+	padding-left: 20px;
+    overflow: hidden;
+    width: 80%;
+	float: right;
+}
+
+@media screen and (max-width: 479px) {
+/*
+   .walk-listing .photo { 
+    float: none;
+    margin-right:0;
+    width:auto;
+	height:auto;
+    border:1px solid #000;
+    border-bottom:0px solid #000;    
+  } */
+   .walk-listing .summary { 
+    float: none;
+    margin-right:0;
+    width:auto;
+	height:auto;
+    /* border:1px solid #000; */
+  }
+}
+
+/* end blog page */
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* this part is for academic page */
+/* ------------------------------------------------------------ */
+
+/* end academic page */
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------ */
+/* this part is for footer and social icon */
+/* ------------------------------------------------------------ */
+footer {
+	text-align: right;
+	padding: 40px 15px;
+	max-width: $content-width;
+	margin: 0 auto;
+}
+a.footer {
+	color: #cccccc
+}
+
+.fa-github-square:hover{
+color: #000000;
+}
+.fa-linkedin-square:hover{
+color: #007bb5;
+}
+.ai-google-scholar-square:hover{
+color: #4885ed
+}
+.fa-google-plus-square:hover{
+color: #dd4b39;
+}
+.fa-twitter-square:hover{
+color: #55acee;
+}
+.fa-facebook-square:hover{
+color: #3b5998;
+}
+
+@media screen and (max-width: $breakpoint) {
+   footer { 
+	text-align: center;
+  }
+}
+
+/* end footer and social icon */
+/* ------------------------------------------------------------ */
