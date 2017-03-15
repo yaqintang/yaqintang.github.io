@@ -9,14 +9,14 @@ search keywords:
 */
 
 /* declare commonly used variables; */
-$content-width: 800px;
+$content-width: 1000px;
 $breakpoint: 600px;
 $nav-height: 50px;
 $nav-background: #ffffff;
 $nav-font-color: #262626;
 $link-hover-color: #2581DC;
 /* some default variables
-$link-color; $font-color; $font-style; $heading-font-color; $heading-font; $main;
+$link-color; $font-color; $font-style; $main;
 */
 
 /* ------------------------------------------------------------ */
@@ -37,14 +37,6 @@ main {
 	margin: 0 auto;
 }
 
-h1,
-h2,
-h3 {
-	font-weight: 600;
-	font-family: $heading-font;
-	line-height: 1.5;
-	color: #000000;
-}
 h1 {
 	color: #000000;
 	font-weight: bold;
@@ -56,7 +48,27 @@ h2 {
 	font-weight: bold;
 	font-size: 2em;
 }
-
+h3 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+h4 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 5px;
+}
+h5 {
+	color: #000000;
+	font-size: 15px;
+	margin: 0 auto;
+}
+h6 {
+	color: #000000;
+	font-size: 11px;
+	margin: 0 auto;
+}
 
 a,
 a:visited {
@@ -101,7 +113,7 @@ time {
 	width: 30%;
 	padding-top: 40px;
 	.imgprofile {
-		max-width: 85%;
+		max-width: 80%;
 		border-radius: 5%;
 	}
 }
@@ -136,14 +148,14 @@ time {
 	position: relative;
 	text-align: center;
 }
-.leftColumn, .rightColumn, .sideNav {  overflow: hidden; border: 1px solid  #d9d9d9; border-radius: 0; padding: 15px; height: 225px; margin-bottom: 15px;}
+.leftColumn, .rightColumn, .sideNav {  overflow: hidden; border: 1px solid  #d9d9d9; border-radius: 0; padding: 15px; margin-bottom: 15px;}
 
 @media screen and (min-width: $breakpoint) {
-  .leftColumn { margin-right: 34%; margin-left: 34%; width: 32%; height: 338px; border-radius: 5%; }
+  .leftColumn { margin-right: 34%; margin-left: 34%; width: 32%; border-radius: 5%; }
 
-  .rightColumn { position: absolute; top: 0; right: 0; width: 32%; height: 338px; border-radius: 5%; }
+  .rightColumn { position: absolute; top: 0; right: 0; width: 32%; border-radius: 5%; }
 
-  .sideNav { float: left; width: 32%; height: 338px; border-radius: 5%; }
+  .sideNav { float: left; width: 32%; border-radius: 5%; }
 }
 
 /* end homepage */
@@ -375,6 +387,36 @@ nav {
 /* ------------------------------------------------------------ */
 /* this part is for academic page */
 /* ------------------------------------------------------------ */
+
+.projectscontainer {
+	width: 100%;
+}
+.projectscontainer .introduce {
+	float: right;
+	width: 70%;
+	padding-left: 20px;
+}
+.projectscontainer .photo {
+	float: left;
+	width: 30%;
+	padding-top: 100px;
+	.imgproject {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: $breakpoint) {
+	.projectscontainer .introduce { 
+		width:auto;
+		height:auto;
+		padding: 0 15px;
+	}
+	.projectscontainer .photo {
+		width:auto;
+		height:auto;
+		padding: 0;
+	}
+}
 
 /* end academic page */
 /* ------------------------------------------------------------ */

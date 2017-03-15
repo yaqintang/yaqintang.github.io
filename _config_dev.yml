@@ -1,4 +1,5 @@
 # Site Settings
+# start on console with command: jekyll serve --config _config.yml, _config_dev.yml
 title: Yaqin Tang
 email: ytangchn@gmail.com
 description: >
