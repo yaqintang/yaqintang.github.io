@@ -24,6 +24,7 @@ $link-color; $font-color; $font-style; $main;
 /* ------------------------------------------------------------ */
 
 body {
+	margin: 0;
 	color: $font-color;
 	font-family: $font-style;
 	font-size: 1.1em;
