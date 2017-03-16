@@ -24,19 +24,19 @@ layout: default
 <div class="columnsContainer">
 	<div class="sideNav">
 		<h6><time>{{ site.posts[0].date | date: "%b %-d, %Y" }}</time></h6>
-		<h4><a href="{{ site.posts[0].url | prepend: site.baseurl }}"><font size="+1">{{ site.posts[0].title }}</font></a></h4>
+		<h4><a href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }}</a></h4>
 		<p>{% if site.posts[0].summary %}{{ site.posts[0].summary }}{% endif %}</p>
     </div>
 
 	<div class="leftColumn">
 		<h6><time>{{ site.posts[1].date | date: "%b %-d, %Y" }}</time></h6>
-		<h4><a href="{{ site.posts[1].url | prepend: site.baseurl }}"><font size="+1">{{ site.posts[1].title }}</font></a></h4>
+		<h4><a href="{{ site.posts[1].url | prepend: site.baseurl }}">{{ site.posts[1].title }}</a></h4>
 		<p>{% if site.posts[1].summary %}{{ site.posts[1].summary }}{% endif %}</p>
     </div>
 
 	<div class="rightColumn">
 		<h6><time>{{ site.posts[2].date | date: "%b %-d, %Y" }}</time></h6>
-		<h4><a href="{{ site.posts[2].url | prepend: site.baseurl }}"><font size="+1">{{ site.posts[2].title }}</font></a></h4>
+		<h4><a href="{{ site.posts[2].url | prepend: site.baseurl }}">{{ site.posts[2].title }}</a></h4>
 		<p>{% if site.posts[2].summary %}{{ site.posts[2].summary }}{% endif %}</p>
     </div>
 	<div style="clear: both;"></div>
