@@ -124,6 +124,9 @@ time {
 }
 
 @media screen and (max-width: $breakpoint) {
+	article {
+		padding: 0;
+	}
 	h1 {
 		color: #000000;
 		font-weight: bold;
@@ -136,7 +139,7 @@ time {
 	.profilecontainer .introduce { 
 		width:auto;
 		height:auto;
-		padding: 0 15px;
+		padding: 0;
 	}
 	.profilecontainer .photo {
 		margin-left:15%;
