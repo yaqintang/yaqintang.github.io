@@ -37,6 +37,11 @@ main {
 	max-width: $content-width;
 	margin: 0 auto;
 }
+article {
+	padding: 0 15px;
+	max-width: $content-width;
+	margin: 0 auto;
+}
 
 h1 {
 	color: #000000;
@@ -427,7 +432,7 @@ nav {
 	.projectscontainer .introduce { 
 		width:auto;
 		height:auto;
-		padding: 0 15px;
+		padding: 0;
 	}
 	.projectscontainer .photo {
 		width:auto;
