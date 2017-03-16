@@ -93,7 +93,6 @@ time {
 
 pre {
 	background-color: #f2f2f2;
-	overflow: scroll;
 }
 .highlight {
 	margin: 0 auto;
@@ -134,6 +133,9 @@ pre {
 @media screen and (max-width: $breakpoint) {
 	article {
 		padding: 0;
+	}
+	pre {
+		overflow: scroll;
 	}
 	h1 {
 		color: #000000;
