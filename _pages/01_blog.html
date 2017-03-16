@@ -4,10 +4,14 @@ title: Blog
 permalink: /blog/
 ---
 
-<h2>Blog <font size="2">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></font></h2>
+<center>
+<font size="+1"><h3 style="margin-bottom: 0; margin-top: 40px;">Very little is needed to make a happy life;<br>it is all within yourself, in your way of thinking.</h3></font>
+<time>- by Marcus Aurelius</time><br>
+<h5 style="margin-bottom:40px;">subscribe via<a href="{{ "/feed.xml" | prepend: site.baseurl }}"> RSS   <i class="fa fa-rss"></i></a></h5>
+</center>
 
 {% for post in site.posts %}
-<div class="walk-listing">
+<div class="walk-listing" style="max-width:600px;margin:0 auto;">
 	<div class="photo">
 		<img src="/images/flowerround.jpg" style="max-width:100%;border-radius:50%;" alt="" align="middle"/>
 	</div>
@@ -20,6 +24,4 @@ permalink: /blog/
 	</div>
 </div>
 {% endfor %}
-
-
 
