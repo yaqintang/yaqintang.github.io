@@ -11,17 +11,10 @@ permalink: /blog/
 </center>
 
 {% for post in site.posts %}
-<div class="walk-listing" style="max-width:600px;margin:0 auto;">
-	<div class="photo">
-		<img src="/images/flowerround.jpg" style="max-width:100%;border-radius:50%;" alt="" align="middle"/>
-	</div>
-    <div class="summary">
-		<p>
-		<font size="1"><time>{{ post.date | date: "%b %-d, %Y" }}</time></font>
-		<br><font size="+1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></font>
-		<br><font size="-1">{% if post.summary %}{{ post.summary }}{% endif %}</font>
-		</p>
-	</div>
+<div class="blogcontainer">
+	<h5 style="color: #e60000;">{% if post.bookmark %}<i class="fa fa-bookmark-o" style="margin-right: 5px;"></i>{{ post.bookmark }}{% endif %}</h5>
+	<h4 style="margin-bottom: 0;"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+	<h6 style="margin: 10px 0;"><time>{{ post.date | date: "%b %-d, %Y" }}</time></h6>
+	<p style="margin-top: 0;">{% if post.summary %}{{ post.summary }}{% endif %}</p>
 </div>
 {% endfor %}
-

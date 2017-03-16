@@ -2,7 +2,10 @@
 layout: default
 ---
 
+<center>
 <h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+<time>{{ page.date | date: "%b %-d, %Y" }}<br>{% if page.summary %}{{ page.summary }}{% endif %}</time>
+</center>
+
 
 {{ content }}

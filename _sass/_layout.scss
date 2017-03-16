@@ -91,6 +91,14 @@ time {
 	color: #898989;
 }
 
+pre {
+	background-color: #f2f2f2;
+	overflow: scroll;
+}
+.highlight {
+	margin: 0 auto;
+}
+
 /* end overal settings */
 /* ------------------------------------------------------------ */
 
@@ -365,45 +373,10 @@ nav {
 /* ------------------------------------------------------------ */
 /* this part is for blog page */
 /* ------------------------------------------------------------ */
-.walk-listing {
-	background-color: #fff;
-	margin-bottom: 20px;
-	overflow: hidden;
-	position: relative;
-    /* border: 1px solid #000; */
-    width: 100%;
-}
 
-.walk-listing .photo {
-    float: left;
-    width: 20%;
-	overflow: hidden;
-}
-
-.walk-listing .summary {
-	padding-left: 20px;
-    overflow: hidden;
-    width: 80%;
-	float: right;
-}
-
-@media screen and (max-width: 479px) {
-/*
-   .walk-listing .photo { 
-    float: none;
-    margin-right:0;
-    width:auto;
-	height:auto;
-    border:1px solid #000;
-    border-bottom:0px solid #000;    
-  } */
-   .walk-listing .summary { 
-    float: none;
-    margin-right:0;
-    width:auto;
-	height:auto;
-    /* border:1px solid #000; */
-  }
+.blogcontainer {
+	max-width: 600px;
+	margin: 40px auto;
 }
 
 /* end blog page */
@@ -453,7 +426,7 @@ nav {
 /* ------------------------------------------------------------ */
 footer {
 	text-align: right;
-	padding: 40px 15px;
+	padding: 40px 30px;
 	max-width: $content-width;
 	margin: 0 auto;
 }
