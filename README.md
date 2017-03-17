@@ -2,7 +2,7 @@
 
 [http://yaqintang.github.io/](http://yaqintang.github.io/)
 
-I'm technically a software engineer, and you can learn more about me and my past experience at the about page. But you guess it, I will be an active blogger here! Check out my posts at the blog page now!
+I create this page to serve as a hub to archive my experience and writings. All the information is based on my understanding, and I'm trying to make it clear, accurate and informative.
 
 ## License
 
