@@ -2,7 +2,7 @@
 # start on console with command: jekyll serve --config _config.yml, _config_dev.yml
 title: Yaqin Tang
 email: ytangchn@gmail.com
-description: Yaqin Tang is a full-time software engineer. She graduated from winlab, Rutgers university, where she focused on mobile computing, wireless networks and visible light communication.
+description: Yaqin Tang is a full-time software engineer. She graduated from winlab/ECE, Rutgers university, where she focused on mobile computing, wireless networks and visible light communication.
 baseurl: ""
 url: "http://localhost:4000"
 twitter_username: yaqintang
