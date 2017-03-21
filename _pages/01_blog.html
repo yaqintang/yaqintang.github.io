@@ -1,0 +1,20 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<center>
+<font size="+1"><h3 style="margin-bottom: 0; margin-top: 40px;">Very little is needed to make a happy life;<br>it is all within yourself, in your way of thinking.</h3></font>
+<time>- by Marcus Aurelius</time><br>
+<h5 style="margin-bottom:40px;">subscribe via<a href="{{ "/feed.xml" | prepend: site.baseurl }}"> RSS   <i class="fa fa-rss"></i></a></h5>
+</center>
+
+{% for post in site.posts %}
+<div class="blogcontainer">
+	<h5 style="color: #e60000;">{% if post.bookmark %}<i class="fa fa-bookmark-o" style="margin-right: 5px;"></i>{{ post.bookmark }}{% endif %}</h5>
+	<h4 style="margin-bottom: 0;"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+	<h6 style="margin: 10px 0;"><time>{{ post.date | date: "%b %-d, %Y" }}</time></h6>
+	<p style="margin-top: 0;">{% if post.summary %}{{ post.summary }}{% endif %}</p>
+</div>
+{% endfor %}
