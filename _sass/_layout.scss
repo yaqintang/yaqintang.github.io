@@ -464,3 +464,14 @@ color: #3b5998;
 
 /* end footer and social icon */
 /* ------------------------------------------------------------ */
+.services-table {
+	display: flex;
+	width: 100%;
+	.title {
+		font-weight: bold;
+		flex-basis: 30%;
+	}
+	.content {
+		flex-basis: 70%;
+	}
+}
